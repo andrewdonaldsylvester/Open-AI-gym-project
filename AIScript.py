@@ -26,6 +26,7 @@ for e in range(episodes):
     time = 0 # counts how many timesteps the episode has been running, used for score
 
     while not done:
+        env.render()
         time += 1 # increment time
 
         action = cartpoleAI.act(state) # determine which action to take
